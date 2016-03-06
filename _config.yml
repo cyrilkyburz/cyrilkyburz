@@ -1,0 +1,15 @@
+title: Cyril Kyburz
+keywords: Cyril Kyburz
+description: >
+  Personal site of Cyril Kyburz.
+
+url: https://cyrilkyburz.ch
+favicon: img/favicon.ico
+google_analytics_key: UA-74715395-1
+
+markdown: kramdown
+include: [_page]
+exclude: [CNAME, README.md, Gemfile, Gemfile.lock, bower.json, Rakefile, browserslist]
+
+gems:
+- jekyll-assets

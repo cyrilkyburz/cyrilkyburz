@@ -1,0 +1,6 @@
+_site
+.asset-cache
+.jekyll-metadata
+.DS_Store
+.idea
+_assets/bower

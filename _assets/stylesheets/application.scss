@@ -1,0 +1,74 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.8;
+  }
+}
+
+%animation {
+  animation: fadeIn ease-in 1;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+body {
+  background-color: #000;
+  display: block;
+  font-family: 'Raleway', sans-serif;
+  font-smoothing: antialiased;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+
+  .box {
+    align-items: center;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    .content {
+      color: #FFF;
+      font-size: 10vw;
+      line-height: 12vw;
+
+      .firstname {
+        letter-spacing: 3.6vw;
+      }
+
+      .lastname {
+        font-weight: 900;
+      }
+
+      .firstname,
+      .lastname {
+        @extend %animation;
+      }
+
+      .github {
+        @extend %animation;
+
+        animation-delay: 0.3s;
+        color: #FFF;
+        display: block;
+        font-size: 4vw;
+        line-height: 7vw;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .particles {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+  }
+}
