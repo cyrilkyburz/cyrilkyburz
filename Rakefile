@@ -12,7 +12,6 @@ CNAME = "cyrilkyburz.ch"
 namespace :site do
   desc "Generate blog files"
   task :generate do
-    system 'bower install'
     Jekyll::Site.new(Jekyll.configuration({
       "source"      => ".",
       "destination" => "_release"
