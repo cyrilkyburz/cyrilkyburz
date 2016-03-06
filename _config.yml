@@ -9,7 +9,7 @@ google_analytics_key: UA-74715395-1
 
 markdown: kramdown
 include: [_page]
-exclude: [CNAME, Gemfile, Gemfile.lock, bower.json, Rakefile, browserslist]
+exclude: [CNAME, README.md, Gemfile, Gemfile.lock, bower.json, Rakefile, browserslist]
 
 gems:
 - jekyll-assets
