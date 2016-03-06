@@ -2,6 +2,9 @@
 # see: https://github.com/jekyll/jekyll/issues/2900
 
 do ->
+  if 'cyrilkyburz.ch' is window.location.host and window.location.protocol is not 'https:'
+    window.location.protocol = 'https'
+
   particlesJS 'particles', {
     "particles": {
       "number": {
