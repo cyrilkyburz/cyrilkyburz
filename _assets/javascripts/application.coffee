@@ -11,7 +11,7 @@ do ->
         "value": 200,
         "density": {
           "enable": true,
-          "value_area": 1000
+          "value_area": 1800
         }
       },
       "color": {
@@ -61,7 +61,7 @@ do ->
       },
       "move": {
         "enable": true,
-        "speed": 6,
+        "speed": 1,
         "direction": "none",
         "random": false,
         "straight": false,
