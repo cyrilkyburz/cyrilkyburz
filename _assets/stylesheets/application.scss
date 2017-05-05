@@ -18,6 +18,7 @@ body {
   background-color: #000;
   background-image: radial-gradient(circle farthest-corner at top left, #525B61 0%, #000000 100%);
   display: block;
+  overflow: hidden;
   font-family: 'Raleway', sans-serif;
   font-smoothing: antialiased;
   height: 100vh;
