@@ -5,6 +5,13 @@ do ->
   if 'cyrilkyburz.ch' is window.location.host and window.location.protocol is not 'https:'
     window.location.protocol = 'https'
 
+  document.getElementsByTagName('body')[0].onclick = ->
+    c = document.getElementsByClassName('content')[0]
+    c.classList.add 'strobe'
+
+    r = -> c.classList.remove 'strobe'
+    setTimeout r, 2000
+
   particlesJS 'particles', {
     "particles": {
       "number": {
